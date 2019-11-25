@@ -5,12 +5,12 @@
       <![CDATA[Demo]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="104" started-at="2019-11-25T08:48:10Z" finished-at="2019-11-25T08:48:10Z">
+  <suite name="Suite" duration-ms="180" started-at="2019-11-25T12:05:11Z" finished-at="2019-11-25T12:05:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="104" started-at="2019-11-25T08:48:10Z" finished-at="2019-11-25T08:48:10Z">
+    <test name="Test" duration-ms="180" started-at="2019-11-25T12:05:11Z" finished-at="2019-11-25T12:05:11Z">
       <class name="com.CRM.Login.Demo">
-        <test-method status="PASS" signature="run()[pri:0, instance:com.CRM.Login.Demo@174d20a]" name="run" duration-ms="15" started-at="2019-11-25T08:48:10Z" finished-at="2019-11-25T08:48:10Z">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.CRM.Login.Demo@174d20a]" name="run" duration-ms="38" started-at="2019-11-25T12:05:11Z" finished-at="2019-11-25T12:05:11Z">
           <reporter-output>
             <line>
               <![CDATA[Demo]]>
