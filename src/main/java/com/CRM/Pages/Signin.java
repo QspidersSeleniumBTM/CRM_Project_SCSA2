@@ -1,4 +1,4 @@
-package Pages;
+package com.CRM.Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -52,20 +52,8 @@ public class Signin {
 		return errormsg.getText();
 	}
 	
-	@FindBy(xpath = "//a[@href='/crm/logout.sas']")
-	private WebElement logOutLink;
 	
-	
-
-	public WebElement getLogOutLink() {
-		return logOutLink;
-	}
-
-	public void clickLogOutLink() {
-		logOutLink.click();
-	}
-
-	public void login(String name,String pw) throws Throwable {
+	public void signIn(String name,String pw) throws Throwable {
 		lntb.sendKeys(name);
 		pwtb.sendKeys(pw);
 		signIn.click();
