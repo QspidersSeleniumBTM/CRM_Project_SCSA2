@@ -5,12 +5,12 @@
       <![CDATA[Demo]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="120" started-at="2019-11-25T14:59:43Z" finished-at="2019-11-25T14:59:44Z">
+  <suite name="Suite" duration-ms="159" started-at="2019-11-25T16:02:20Z" finished-at="2019-11-25T16:02:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="120" started-at="2019-11-25T14:59:43Z" finished-at="2019-11-25T14:59:44Z">
+    <test name="Test" duration-ms="159" started-at="2019-11-25T16:02:20Z" finished-at="2019-11-25T16:02:21Z">
       <class name="com.CRM.Login.Demo">
-        <test-method status="PASS" signature="run()[pri:0, instance:com.CRM.Login.Demo@3c0ecd4b]" name="run" duration-ms="26" started-at="2019-11-25T14:59:43Z" finished-at="2019-11-25T14:59:44Z">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.CRM.Login.Demo@3c0ecd4b]" name="run" duration-ms="47" started-at="2019-11-25T16:02:21Z" finished-at="2019-11-25T16:02:21Z">
           <reporter-output>
             <line>
               <![CDATA[Demo]]>
@@ -18,6 +18,6 @@
           </reporter-output>
         </test-method> <!-- run -->
       </class> <!-- com.CRM.Login.Demo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
