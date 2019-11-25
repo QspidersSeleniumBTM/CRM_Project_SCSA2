@@ -11,8 +11,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import com.CRM.Pages.CRMLoginPage;
-import com.CRM.Pages.HomePage;
+import com.CRM.Pages.CRMHomePage;
+import com.CRM.Pages.Signin;
 
 
 public abstract class BaseTest implements IAutoConsts{
@@ -21,6 +21,8 @@ public abstract class BaseTest implements IAutoConsts{
 	public static WebDriver driver;
 	FileLib flib;
 	WebdriverCommonLib wlib;
+	Signin sign;
+	CRMHomePage chp;
 	
 	@BeforeClass
 	public void openBrowser() throws Throwable
@@ -60,8 +62,8 @@ public abstract class BaseTest implements IAutoConsts{
 		
 		String username = flib.getKeyPropValue(PROPERTY_PATH, "username");
 		String password = flib.getKeyPropValue(PROPERTY_PATH, "password");
-		CRMLoginPage alp=new CRMLoginPage(driver);
-		alp.login(username, password);
+		sign=new Signin(driver);
+		sign.signIn(username, password);
 		String expectedHomeTitle = flib.getCellData(EXCEL_PATH, "Invalid", 1, 5);
 		wlib.verifyAssert(wlib.getPageTitle(), expectedHomeTitle, "Home Page");
 		
@@ -71,8 +73,8 @@ public abstract class BaseTest implements IAutoConsts{
 	public void logoutFromApp() throws Throwable
 	{
 		Thread.sleep(3000);
-		HomePage ettp=new HomePage(driver);
-		ettp.clicklogoutLink();
+		chp=new CRMHomePage(driver);
+		chp.clickLogOutLink();
 		
 		
 	}
