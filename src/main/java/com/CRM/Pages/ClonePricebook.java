@@ -1,4 +1,4 @@
-package pricebook;
+package com.CRM.Pages;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import genericlib.FileLib;
-import genericlib.IAutoConsts;
+import com.CRM.genericLib.FileLib;
+import com.CRM.genericLib.IAutoConsts;
 
 public class ClonePricebook implements IAutoConsts
 {

@@ -1,4 +1,4 @@
-package com.crm.pages;
+package com.CRM.Pages;
 
 import java.util.List;
 

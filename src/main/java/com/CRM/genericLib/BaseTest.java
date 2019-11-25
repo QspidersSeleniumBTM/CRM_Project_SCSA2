@@ -15,7 +15,7 @@ import com.CRM.Pages.CRMHomePage;
 import com.CRM.Pages.Signin;
 
 
-public abstract class BaseTest implements IAutoConsts{
+public class BaseTest implements IAutoConsts{
 
 	
 	public static WebDriver driver;

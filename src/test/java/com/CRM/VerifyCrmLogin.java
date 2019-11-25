@@ -1,4 +1,4 @@
-package com.crm.loginLib;
+package com.CRM;
 
 import java.util.Set;
 
@@ -7,17 +7,19 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.crm.genericLib.BaseTest;
-import com.crm.genericLib.FileLib;
-import com.crm.genericLib.WebdriverCommonLib;
-import com.crm.pages.CrmLoginPage;
-import com.crm.pages.LeadDropdownPage;
-import com.crm.pages.ZohoCrmHomePage;
+import com.CRM.genericLib.BaseTest;
+import com.CRM.genericLib.FileLib;
+import com.CRM.genericLib.WebdriverCommonLib;
+import com.CRM.Pages.CRMLoginPage;
+
+import com.CRM.Pages.LeadDropdownPage;
+import com.CRM.Pages.ZohoCRMHomePage;
+
 
 public class VerifyCrmLogin extends BaseTest{
 
-	ZohoCrmHomePage zchp;
-	CrmLoginPage clp;
+	ZohoCRMHomePage zchp;
+	CRMLoginPage clp;
 	FileLib flib;
 	WebdriverCommonLib wlib;
 	LeadDropdownPage ldp;
@@ -112,19 +114,19 @@ public class VerifyCrmLogin extends BaseTest{
 	public void verifyCrmInvalidLoginTest() throws Throwable {
 		flib=new FileLib();
 		wlib=new WebdriverCommonLib();
-		 zchp=new ZohoCrmHomePage(driver);
+		 zchp=new ZohoCRMHomePage(driver);
 		 
-		 zchp.clicklogoutLink();
+		 zchp.clickLogoutbtn();
 		 
 		 
-		 clp=new CrmLoginPage(driver);
+		 clp=new CRMLoginPage(driver);
 		 int rowCount = flib.getRowCount(EXCEL_PATH, "Invalid");
 		 SoftAssert sa = null;
 		 for(int i=1;i<=rowCount;i++)
 		 {
 		 clp.login(flib.getCellData(EXCEL_PATH, "Invalid", i, 0), flib.getCellData(EXCEL_PATH, "Invalid", i, 1));
 		 sa=new SoftAssert();
-		 sa.assertEquals(clp.setErrMsg(), flib.getCellData(EXCEL_PATH, "Invalid", 1, 3));
+		 sa.assertEquals(clp.setErrorMsg(), flib.getCellData(EXCEL_PATH, "Invalid", 1, 3));
 		 //wlib.verifySoftAssert(alp.setErrMsg(), flib.getCellData(EXCEL_PATH, "Invalid", 1, 3), "Error Message");
 		 flib.setCellData(EXCEL_PATH, "Invalid", i, 2, "PASS");
 		 
