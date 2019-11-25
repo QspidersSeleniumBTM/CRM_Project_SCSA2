@@ -17,6 +17,7 @@ import com.CRM.Pages.HomePage;
 
 public abstract class BaseTest implements IAutoConsts{
 
+	
 	public static WebDriver driver;
 	FileLib flib;
 	WebdriverCommonLib wlib;
