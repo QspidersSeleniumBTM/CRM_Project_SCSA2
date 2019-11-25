@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CampaignDetailsPage {
+public class CampaignDetailsPage 
+{
 	@FindBy (xpath = "(//input[@value='Edit'])[1]") private WebElement editbtn;
 	public WebElement getEditbtn() {
 		return editbtn;
