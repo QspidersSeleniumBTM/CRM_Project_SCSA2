@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CloneCampaignPage {
+public class CloneCampaignPage 
+{
 	@FindBy (xpath = "(//input[@value='Save'])[1]") private WebElement savebtn;
 	public WebElement getSavebtn() {
 		return savebtn;
