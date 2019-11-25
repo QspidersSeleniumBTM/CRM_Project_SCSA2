@@ -11,7 +11,7 @@ import com.zoho.pages.Create_AllContacts_Page;
 import com.zoho.pages.Create_Contact_page;
 import com.zoho.pages.Create_Lead_Page;
 
-//@Listeners(com.zoho.basics.MyListeners.class)
+@Listeners(com.zoho.basics.MyListeners.class)
 public class Create_Contact extends BaseClass {
 	com.zoho.genriclibraries.WebdriverGenericMethods wgm;
 	Create_Lead_Page clp;

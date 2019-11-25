@@ -1,8 +1,0 @@
-com\CRM\Pages\HomePage.class
-com\CRM\genericLib\WebdriverCommonLib.class
-com\CRM\genericLib\FileLib.class
-com\CRM\Pages\Signin.class
-com\CRM\genericLib\IAutoConsts.class
-com\CRM\Pages\CRMHomePage.class
-com\CRM\Pages\CRMLoginPage.class
-com\CRM\genericLib\BaseTest.class
