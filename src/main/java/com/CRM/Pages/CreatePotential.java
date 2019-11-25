@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CreatePotential 
 {
+	
 	@FindBy(xpath="//a[.='Potentials']") private WebElement potMod;
 	public WebElement getPotMod() {
 		return potMod;
