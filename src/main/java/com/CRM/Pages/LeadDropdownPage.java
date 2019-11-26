@@ -1,4 +1,4 @@
-package com.crm.pages;
+package pages;
 
 import java.util.List;
 
@@ -297,4 +297,9 @@ public class LeadDropdownPage
 	{
 		PageFactory.initElements(driver, this);
 	}
+	@FindBy(xpath="//a[.='iphone 7']")private WebElement camp;
+	public void clickCamp() {
+		camp.click();
+	}
+
 }

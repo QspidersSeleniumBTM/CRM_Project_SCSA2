@@ -22,8 +22,6 @@ public class VerifyCrmLogin extends BaseTest{
 	WebdriverCommonLib wlib;
 	LeadDropdownPage ldp;
 	
-	
-	
 	@Test(enabled=true)
 	public void verifyCrmValidLoginTest() throws Throwable  {
 	
@@ -68,7 +66,7 @@ public class VerifyCrmLogin extends BaseTest{
 	    ldp.clickLeadStatusDD();
 	    wlib.selectOption(ldp.getLeadStatusDD(), 3);
 	    
-	    
+	    String mainwh=driver.getWindowHandle();
 	    
 	    ldp.setWebst(flib.getCellData(EXCEL_PATH, "Values", 1, 7));
 	    
@@ -79,19 +77,20 @@ public class VerifyCrmLogin extends BaseTest{
 	    
 	    ldp.setNumOfEmp(flib.getCellData(EXCEL_PATH, "Values", 1, 9));
 	    
-	   /* ldp.clickCsLookup();
+	    ldp.clickCsLookup();
 	    Set<String> allwhs = driver.getWindowHandles();
 	    for(String wh:allwhs)
 	    {
 	    	String title=driver.switchTo().window(wh).getTitle();
-	    	if(title.contains("Campaign Name"))
+	    	if(title.contains("Campaign"))
 	    	{
-	    		JavascriptExecutor jse = (JavascriptExecutor)driver;
-	    		jse.executeScript("document.getElementsByTagName('a')[0].click()");
+	    		ldp.clickCamp();
+//	    		JavascriptExecutor jse = (JavascriptExecutor)driver;
+//	    		jse.executeScript("document.getElementsByTagName('a')[0].click()");
 	    		break;
 	    	}
-	    }*/
-	    
+	    }
+	    driver.switchTo().window(mainwh);
 	    ldp.setStrt(flib.getCellData(EXCEL_PATH, "Values", 1, 10));
 	    
 	    ldp.setCit(flib.getCellData(EXCEL_PATH, "Values", 1, 11));
