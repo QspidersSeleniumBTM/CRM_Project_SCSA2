@@ -1,4 +1,4 @@
-package com.CRM.Login;
+package com.leads.module;
 
 import java.util.Set;
 
@@ -14,7 +14,7 @@ import com.compaign.pages.CrmLoginPage;
 import com.CRM.Pages.LeadDropdownPage;
 import com.compaign.pages.ZohoCRMHomePage;
 
-public class VerifyCrmLogin extends BaseTest{
+public class VerifyLeadDropDown extends BaseTest{
 
 	ZohoCRMHomePage zchp;
 	CrmLoginPage clp;
@@ -23,7 +23,7 @@ public class VerifyCrmLogin extends BaseTest{
 	LeadDropdownPage ldp;
 	
 	@Test(enabled=true)
-	public void verifyCrmValidLoginTest() throws Throwable  {
+	public void verifyLeadDD() throws Throwable  {
 	
 		Reporter.log("Home Page is Displayed==> PASSED",true);
 		
@@ -106,29 +106,4 @@ public class VerifyCrmLogin extends BaseTest{
 	      
 	}
 	
-	
-	//@Test
-	public void verifyCrmInvalidLoginTest() throws Throwable {
-		flib=new FileLib();
-		wlib=new WebdriverCommonLib();
-		 zchp=new ZohoCrmHomePage(driver);
-		 
-		 zchp.clicklogoutLink();
-		 
-		 
-		 clp=new CrmLoginPage(driver);
-		 int rowCount = flib.getRowCount(EXCEL_PATH, "Invalid");
-		 SoftAssert sa = null;
-		 for(int i=1;i<=rowCount;i++)
-		 {
-		 clp.login(flib.getCellData(EXCEL_PATH, "Invalid", i, 0), flib.getCellData(EXCEL_PATH, "Invalid", i, 1));
-		 sa=new SoftAssert();
-		 sa.assertEquals(clp.setErrMsg(), flib.getCellData(EXCEL_PATH, "Invalid", 1, 3));
-		 //wlib.verifySoftAssert(alp.setErrMsg(), flib.getCellData(EXCEL_PATH, "Invalid", 1, 3), "Error Message");
-		 flib.setCellData(EXCEL_PATH, "Invalid", i, 2, "PASS");
-		 
-		 
-		 }
-		 sa.assertAll();
-	}
 }

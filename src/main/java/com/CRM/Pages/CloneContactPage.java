@@ -1,4 +1,4 @@
-package contacts;
+package com.CRM.Pages;
 
 import java.util.List;
 
@@ -7,14 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
-import genericlib.BaseTest;
-import genericlib.FileLib;
-import genericlib.IAutoConsts;
+import com.CRM.genericLib.FileLib ;
+import com.CRM.genericLib.IAutoConsts;
 
-public class DeleteContact extends BaseTest implements IAutoConsts
+public class CloneContactPage implements IAutoConsts
 {
-	
 	@FindBy(xpath="(//a[@class='menuOff'])[3]") private WebElement contMod;
 	public WebElement getContMod() 
 	{
@@ -25,17 +24,24 @@ public class DeleteContact extends BaseTest implements IAutoConsts
 		contMod.click();
 	}
 	
-	@FindBy(xpath="(//input[@name='Delete2'])[1]") private WebElement dltBtn;
-	public WebElement getDltBtn() 
+	@FindBy(xpath="(//input[@name='Clone2'])[1]") private WebElement clnbtn;
+	public WebElement getClnbtn() 
 	{
-		return dltBtn;
+		return clnbtn;
 	}
-	public void clickDltBtn() throws Throwable 
+	public void clickClnbtn() 
 	{
-		dltBtn.click();
-		Alert al=driver.switchTo().alert();
-		Thread.sleep(2000);
-		al.accept();
+		clnbtn.click();
+	}
+	
+	@FindBy(xpath="(//input[@name='Button'])[1]") private WebElement savebtn;
+	public WebElement getSavebtn() 
+	{
+		return savebtn;
+	}
+	public void clickSavebtn() 
+	{
+		savebtn.click();
 	}
 	
 	@FindBy(xpath="//table[2]//td[3]//a") private List<WebElement> contList;
@@ -51,13 +57,14 @@ public class DeleteContact extends BaseTest implements IAutoConsts
 			if(oneCont.getText().equalsIgnoreCase(flib.getCellData(EXCEL_PATH, "Invalid", 1, 6)))
 			{
 				oneCont.click();
-				clickDltBtn();
+				clickClnbtn();
+				clickSavebtn();
 				break;
 			}
 		}
 	}
 	
-	public DeleteContact(WebDriver driver)
+	public CloneContactPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}

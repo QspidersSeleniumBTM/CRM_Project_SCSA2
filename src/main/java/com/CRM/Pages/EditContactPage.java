@@ -1,4 +1,4 @@
-package contacts;
+package com.CRM.Pages;
 
 import java.util.List;
 
@@ -7,10 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import genericlib.FileLib;
-import genericlib.IAutoConsts;
+import com.CRM.genericLib.FileLib;
+import com.CRM.genericLib.IAutoConsts;
 
-public class EditContact implements IAutoConsts 
+
+public class EditContactPage implements IAutoConsts 
 {
 	@FindBy(xpath="(//a[@class='menuOff'])[3]") private WebElement contMod;
 	public WebElement getContMod() 
@@ -62,7 +63,7 @@ public class EditContact implements IAutoConsts
 		}
 	}
 	
-	public EditContact(WebDriver driver)
+	public EditContactPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}

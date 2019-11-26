@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.CRM.genericLib.FileLib;
 import com.CRM.genericLib.IAutoConsts;
 
-public class ClonePricebook implements IAutoConsts
+public class ClonePricebookPage implements IAutoConsts
 {
 	@FindBy(xpath="(//a[@class='menuOff'])[14]") private WebElement prcbookmod;
 	public WebElement getPrcbookmod() 
@@ -62,7 +62,7 @@ public class ClonePricebook implements IAutoConsts
 		clkSave.click();
 	}
 	
-	public ClonePricebook(WebDriver driver)
+	public ClonePricebookPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
