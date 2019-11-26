@@ -1,14 +1,14 @@
-package com.crm.leads;
+package com.CRM;
 
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.crm.genericLib.BaseTest;
-import com.crm.genericLib.WebdriverCommonLib;
-import com.crm.pages.CreateLead;
-import com.crm.pages.LeadDetails;
-import com.crm.pages.LeadsPage;
-import com.crm.pages.NewLead;
+import com.CRM.genericLib.BaseTest;
+import com.CRM.genericLib.WebdriverCommonLib;
+import com.CRM.Pages.CreateLead;
+import com.CRM.Pages.LeadDetails;
+import com.CRM.Pages.LeadsPage;
+import com.CRM.Pages.NewLead;
 
 public class VerifyLeads extends BaseTest {
 	
