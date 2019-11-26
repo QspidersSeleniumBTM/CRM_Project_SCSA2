@@ -1,4 +1,4 @@
-package com.crm.loginLib;
+package com.CRM.Login;
 
 import java.util.Set;
 
@@ -7,16 +7,16 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.crm.genericLib.BaseTest;
-import com.crm.genericLib.FileLib;
-import com.crm.genericLib.WebdriverCommonLib;
-import com.crm.pages.CrmLoginPage;
-import com.crm.pages.LeadDropdownPage;
-import com.crm.pages.ZohoCrmHomePage;
+import com.CRM.genericLib.BaseTest;
+import com.CRM.genericLib.FileLib;
+import com.CRM.genericLib.WebdriverCommonLib;
+import com.compaign.pages.CrmLoginPage;
+import com.CRM.Pages.LeadDropdownPage;
+import com.compaign.pages.ZohoCRMHomePage;
 
 public class VerifyCrmLogin extends BaseTest{
 
-	ZohoCrmHomePage zchp;
+	ZohoCRMHomePage zchp;
 	CrmLoginPage clp;
 	FileLib flib;
 	WebdriverCommonLib wlib;
@@ -27,7 +27,7 @@ public class VerifyCrmLogin extends BaseTest{
 	
 		Reporter.log("Home Page is Displayed==> PASSED",true);
 		
-		ldp = new LeadDropdownPage(driver);
+		ldp = new LeadDropdoywnPage(driver);
 		flib=new FileLib();
 	    wlib=new WebdriverCommonLib();
 	    
