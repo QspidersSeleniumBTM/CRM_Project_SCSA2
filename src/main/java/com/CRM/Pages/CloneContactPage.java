@@ -2,12 +2,10 @@ package com.CRM.Pages;
 
 import java.util.List;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
 
 import com.CRM.genericLib.FileLib ;
 import com.CRM.genericLib.IAutoConsts;
@@ -62,6 +60,16 @@ public class CloneContactPage implements IAutoConsts
 				break;
 			}
 		}
+	}
+	
+	@FindBy(xpath="//table[4]//tr[2]//td[4]") private WebElement verifyCC;
+	public WebElement getVerifyCC() 
+	{
+		return verifyCC;
+	}
+	public String setVerifyCC() 
+	{
+		return verifyCC.getText();
 	}
 	
 	public CloneContactPage(WebDriver driver)
