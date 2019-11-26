@@ -29,7 +29,7 @@ public class MyListener extends BaseTest implements ITestListener{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		Reporter.log(result.getName()+" execution is Finished",true);
+		Reporter.log(result.getName()+" execution is Finisheddd",true);
 	}
 
 	@Override
