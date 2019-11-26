@@ -6,10 +6,6 @@ import com.CRM.Pages.Campaign;
 import com.CRM.genericLib.BaseTest;
 import com.CRM.genericLib.FileLib;
 import com.CRM.genericLib.WebdriverCommonLib;
-
-
-
-
 public class VerifyCampaign extends BaseTest{
 	FileLib flib;
 	WebdriverCommonLib wlib;
