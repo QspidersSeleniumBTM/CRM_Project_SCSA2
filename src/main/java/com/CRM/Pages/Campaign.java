@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Campaign {
+public class Campaign 
+{
 	@FindBy(xpath="//a[.='Campaigns']") private WebElement cmapaignbtn;
 	public WebElement getCmapaignbtn() {
 		return cmapaignbtn;
