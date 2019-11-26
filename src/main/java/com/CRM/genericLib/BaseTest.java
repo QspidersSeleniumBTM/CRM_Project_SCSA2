@@ -15,7 +15,7 @@ import com.CRM.Pages.CRMHomePage;
 import com.CRM.Pages.Signin;
 
 
-public abstract class BaseTest implements IAutoConsts{
+public class BaseTest implements IAutoConsts{
 
 	
 	public static WebDriver driver;
@@ -48,13 +48,13 @@ public abstract class BaseTest implements IAutoConsts{
 		
 		String url = flib.getKeyPropValue(PROPERTY_PATH, "url");
 		driver.get(url);
-		String expectedTitle = flib.getCellData(EXCEL_PATH, "Invalid", 1, 4);
-		wlib.verifyAssert(wlib.getPageTitle(), expectedTitle, "Login Page");
+//		String expectedTitle = flib.getCellData(EXCEL_PATH, "Invalid", 1, 4);
+//		wlib.verifyAssert(wlib.getPageTitle(), expectedTitle, "Login Page");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
-	@BeforeMethod(enabled=false)
+	@BeforeMethod(enabled=true)
 	public void loginToApp() throws Throwable
 	{
 		flib=new FileLib();
@@ -64,8 +64,8 @@ public abstract class BaseTest implements IAutoConsts{
 		String password = flib.getKeyPropValue(PROPERTY_PATH, "password");
 		sign=new Signin(driver);
 		sign.signIn(username, password);
-		String expectedHomeTitle = flib.getCellData(EXCEL_PATH, "Invalid", 1, 5);
-		wlib.verifyAssert(wlib.getPageTitle(), expectedHomeTitle, "Home Page");
+//		String expectedHomeTitle = flib.getCellData(EXCEL_PATH, "Invalid", 1, 5);
+//		wlib.verifyAssert(wlib.getPageTitle(), expectedHomeTitle, "Home Page");
 		
 	}
 	

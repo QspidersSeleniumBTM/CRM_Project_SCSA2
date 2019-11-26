@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package pages;
+=======
+package com.CRM.Pages;
+>>>>>>> branch 'master' of https://github.com/QspidersSeleniumBTM/CRM_Project_SCSA2.git
 
 import java.util.List;
 

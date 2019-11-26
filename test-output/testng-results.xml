@@ -2,22 +2,46 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Demo]]>
+      <![CDATA[Contacts: All Contacts Page is verified, PASSED]]>
+    </line>
+    <line>
+      <![CDATA[Create Contact Page is verified, PASSED]]>
+    </line>
+    <line>
+      <![CDATA[Contact Details Page is verified, PASSED]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="91" started-at="2019-11-25T08:47:53Z" finished-at="2019-11-25T08:47:53Z">
+  <suite name="Suite" duration-ms="130155" started-at="2019-11-26T07:16:32Z" finished-at="2019-11-26T07:18:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="91" started-at="2019-11-25T08:47:53Z" finished-at="2019-11-25T08:47:53Z">
-      <class name="com.CRM.Login.Demo">
-        <test-method status="PASS" signature="run()[pri:0, instance:com.CRM.Login.Demo@6500df86]" name="run" duration-ms="21" started-at="2019-11-25T08:47:53Z" finished-at="2019-11-25T08:47:53Z">
+    <test name="Test" duration-ms="130155" started-at="2019-11-26T07:16:32Z" finished-at="2019-11-26T07:18:43Z">
+      <class name="com.CRM.Contacts.Create_Contact">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.CRM.Contacts.Create_Contact@56ac3a89]" name="openBrowser" is-config="true" duration-ms="21666" started-at="2019-11-26T07:16:32Z" finished-at="2019-11-26T07:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.CRM.Contacts.Create_Contact@56ac3a89]" name="loginToApp" is-config="true" duration-ms="19528" started-at="2019-11-26T07:16:54Z" finished-at="2019-11-26T07:17:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method status="PASS" signature="createContact()[pri:0, instance:com.CRM.Contacts.Create_Contact@56ac3a89]" name="createContact" duration-ms="86970" started-at="2019-11-26T07:17:14Z" finished-at="2019-11-26T07:18:41Z">
           <reporter-output>
             <line>
-              <![CDATA[Demo]]>
+              <![CDATA[Contacts: All Contacts Page is verified, PASSED]]>
+            </line>
+            <line>
+              <![CDATA[Create Contact Page is verified, PASSED]]>
+            </line>
+            <line>
+              <![CDATA[Contact Details Page is verified, PASSED]]>
             </line>
           </reporter-output>
-        </test-method> <!-- run -->
-      </class> <!-- com.CRM.Login.Demo -->
+        </test-method> <!-- createContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.CRM.Contacts.Create_Contact@56ac3a89]" name="tearDown" is-config="true" duration-ms="1836" started-at="2019-11-26T07:18:41Z" finished-at="2019-11-26T07:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.CRM.Contacts.Create_Contact -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
