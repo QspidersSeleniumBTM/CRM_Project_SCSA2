@@ -8,8 +8,6 @@
           <include name="createContact"/>
           <include name="logoutFromApp"/>
           <include name="tearDown"/>
-          <include name="openBrowser"/>
-          <include name="loginToApp"/>
         </methods>
       </class> <!-- com.CRM.Contacts.Create_Contact -->
     </classes>
