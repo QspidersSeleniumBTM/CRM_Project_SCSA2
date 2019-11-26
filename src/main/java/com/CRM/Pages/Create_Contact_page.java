@@ -52,4 +52,8 @@ public void clickSave() {
 public void selectMailingTO() {
 	copyAds.click();
 }
+@FindBy(xpath="//td[.='Mailing to Other']")private WebElement mailingtoothers;
+public void clickMTO() {
+	mailingtoothers.click();
+}
 }

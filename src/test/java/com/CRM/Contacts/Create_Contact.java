@@ -1,15 +1,12 @@
 package com.CRM.Contacts;
 
-import java.awt.Robot;
-
-import org.openqa.selenium.Keys;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.sun.glass.events.KeyEvent;
-import com.CRM.Pages.*;
-
-import com.CRM.genericLib.*;
+import com.CRM.Pages.Create_AllContacts;
+import com.CRM.Pages.Create_Contact_page;
+import com.CRM.genericLib.BaseTest;
+import com.CRM.genericLib.FileLib;
+import com.CRM.genericLib.WebdriverCommonLib;
 
 //@Listeners(com.zoho.basics.MyListeners.class)
 public class Create_Contact extends BaseTest {
@@ -32,20 +29,8 @@ public class Create_Contact extends BaseTest {
 		wcl.verifyAssert(actual2, expected2, "Create Contact Page");
 		ccp.setLN(flib.getKeyPropValue(CONTACT_PROPPATH, "lastname"));
 		ccp.setMS(flib.getKeyPropValue(CONTACT_PROPPATH, "mailingstreet"));
-		//ccp.clickCopyAds();
-		//Thread.sleep(2000);
-		//wgm.selectOption(ccp.getCopyAds(), 0);
-		//Thread.sleep(1000);
-		//Robot r = new Robot();
-		
-	//	r.keyPress(KeyEvent.VK_DOWN);
-	//	r.keyPress(KeyEvent.VK_ENTER);
-		//r.keyRelease(KeyEvent.VK_DOWN);
-	//	r.keyRelease(KeyEvent.VK_ENTER);
-		//ccp.getCopyAds().sendKeys(Keys.DOWN);
-	
-		//ccp.getCopyAds().sendKeys(Keys.ENTER);
-		//Thread.sleep(1000);
+		ccp.clickCopyAds();
+		ccp.clickMTO();
 		ccp.clickSave();
 		String actual3=wcl.getPageTitle();
 		String expected3=flib.getCellData(EXCEL_PATH, "Title", 27, 0);

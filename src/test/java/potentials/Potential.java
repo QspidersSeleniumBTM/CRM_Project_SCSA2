@@ -1,4 +1,4 @@
-package com.CRM.potentials;
+package potentials;
 
 import java.util.concurrent.TimeUnit;
 

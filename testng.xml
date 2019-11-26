@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.CRM.Login.Demo"/>
+      <class name="com.CRM.Contacts.Create_Contact"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
