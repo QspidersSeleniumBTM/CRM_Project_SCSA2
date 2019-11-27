@@ -9,10 +9,14 @@ import com.CRM.genericLib.WebdriverCommonLib;
 public class VerifyCampaign extends BaseTest{
 	FileLib flib;
 	WebdriverCommonLib wlib;
+	BaseTest bt;
 	@Test
 	public void VerifyCampaignDetails() throws Throwable
 	{	flib=new FileLib();
 	    wlib=new WebdriverCommonLib();
+	    bt=new BaseTest();
+	    bt.openBrowser("chrome", flib.getCellData(EXCEL_PATH, "CRMCampaign", 2, 0));
+	    bt.loginToApp();
 		Campaign c = new Campaign(driver);
 		c.clickCmapaignbtn();
 		wlib.verifyAssert(wlib.getPageTitle(), flib.getCellData(EXCEL_PATH, "CRMCampaign", 1, 0), "Campaign List page");
