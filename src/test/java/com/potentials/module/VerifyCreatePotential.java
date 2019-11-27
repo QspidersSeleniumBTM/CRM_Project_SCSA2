@@ -34,7 +34,7 @@ public class VerifyCreatePotential extends BaseTest
 		
 		Reporter.log("Home page is displayed --- passed",true);
 		Thread.sleep(3000);
-		System.out.println("IM HERE");
+		
 		cpp.clickPotMod();
 	
 		cpp.clickNewPotBtn();
