@@ -8,11 +8,10 @@ import org.testng.annotations.Test;
 import com.CRM.genericLib.BaseTest;
 import com.CRM.genericLib.FileLib;
 import com.CRM.genericLib.WebdriverCommonLib;
-
-import PotantialsPages.NewPotential;
-import PotantialsPages.PoteantialPage;
-import PotantialsPages.QuotesPage;
-import PotantialsPages.ReportsPage;
+import com.Potantials.Pages.NewPotential;
+import com.Potantials.Pages.PoteantialPage;
+import com.Potantials.Pages.QuotesPage;
+import com.Potantials.Pages.ReportsPage;
 
 public class Potential extends BaseTest {
 

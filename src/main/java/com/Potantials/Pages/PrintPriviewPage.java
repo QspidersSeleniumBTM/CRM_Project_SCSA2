@@ -1,4 +1,4 @@
-package PotantialsPages;
+package com.Potantials.Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
