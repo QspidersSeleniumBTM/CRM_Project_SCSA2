@@ -26,12 +26,12 @@
       <![CDATA[createContact execution is Finisheddd]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43465" started-at="2019-11-26T11:22:26Z" finished-at="2019-11-26T11:23:10Z">
+  <suite name="Default suite" duration-ms="174146" started-at="2019-11-27T02:58:52Z" finished-at="2019-11-27T03:01:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43465" started-at="2019-11-26T11:22:26Z" finished-at="2019-11-26T11:23:10Z">
+    <test name="Default test" duration-ms="174146" started-at="2019-11-27T02:58:52Z" finished-at="2019-11-27T03:01:46Z">
       <class name="com.CRM.Contacts.Create_Contact">
-        <test-method status="PASS" signature="createContact()[pri:0, instance:com.CRM.Contacts.Create_Contact@27c20538]" name="createContact" duration-ms="40497" started-at="2019-11-26T11:22:26Z" finished-at="2019-11-26T11:23:07Z">
+        <test-method status="PASS" signature="createContact()[pri:0, instance:com.CRM.Contacts.Create_Contact@27c20538]" name="createContact" duration-ms="171022" started-at="2019-11-27T02:58:53Z" finished-at="2019-11-27T03:01:44Z">
           <reporter-output>
             <line>
               <![CDATA[createContact execution is started]]>
@@ -56,7 +56,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- createContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.CRM.Contacts.Create_Contact@27c20538]" name="tearDown" is-config="true" duration-ms="2008" started-at="2019-11-26T11:23:08Z" finished-at="2019-11-26T11:23:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.CRM.Contacts.Create_Contact@27c20538]" name="tearDown" is-config="true" duration-ms="1614" started-at="2019-11-27T03:01:45Z" finished-at="2019-11-27T03:01:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

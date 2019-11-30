@@ -15,7 +15,7 @@ public class Create_Contact extends BaseTest {
 	Create_Contact_page ccp;
 	FileLib flib = new FileLib();
 	Create_AllContacts cap;
-	BaseTest bt=new BaseTest();
+	BaseTest bt=new BaseTest();		
 	
 	@Test
 	public void createContact() throws Throwable {
