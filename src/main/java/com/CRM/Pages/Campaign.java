@@ -67,11 +67,11 @@ public class Campaign
 	public void campaign(String cn) throws Throwable
 	{
 		cmapaignbtn.click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		newCampaignbtn.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		campName.sendKeys(cn);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		savebtn.click();		
 	}
 }
