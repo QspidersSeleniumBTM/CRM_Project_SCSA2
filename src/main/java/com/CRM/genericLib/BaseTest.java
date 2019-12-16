@@ -17,17 +17,12 @@ import com.CRM.Pages.Signin;
 public class BaseTest implements IAutoConsts{
 
 	
-	public static WebDriver driver;
+	public static WebDriver driver=null;
 	FileLib flib;
 	WebdriverCommonLib wlib;
 	Signin sign;
 	CRMHomePage chp;
 	
-	
-
-	
-	
-	//Yo bro
 	public void openBrowser(String browserValue,String url) throws Throwable
 	{	
 		flib=new FileLib();
@@ -48,8 +43,8 @@ public class BaseTest implements IAutoConsts{
 			Reporter.log("Enter Correct Browser Name",true);
 		}
 		driver.get(url);
-		String expectedTitle = flib.getCellData(EXCEL_PATH, "Contacts",3, 0);
-		wlib.verifyAssert(wlib.getPageTitle(), expectedTitle, "Login Page");
+		//String expectedTitle = flib.getCellData(EXCEL_PATH, "Contacts",3, 0);
+		//wlib.verifyAssert(wlib.getPageTitle(), expectedTitle, "Login Page");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
@@ -62,8 +57,8 @@ public class BaseTest implements IAutoConsts{
 		String password = flib.getKeyPropValue(PROPERTY_PATH, "password");
 		sign=new Signin(driver);
 		sign.signIn(username, password);
-		String expectedHomeTitle = flib.getCellData(EXCEL_PATH, "Contacts", 5, 0);
-		wlib.verifyAssert(wlib.getPageTitle(), expectedHomeTitle, "Home Page");
+//		String expectedHomeTitle = flib.getCellData(EXCEL_PATH, "Contacts", 5, 0);
+//		wlib.verifyAssert(wlib.getPageTitle(), expectedHomeTitle, "Home Page");
 		
 	}
 	
