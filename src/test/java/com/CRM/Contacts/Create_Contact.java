@@ -9,7 +9,7 @@ import com.CRM.genericLib.BaseTest;
 import com.CRM.genericLib.FileLib;
 import com.CRM.genericLib.WebdriverCommonLib;
 
-@Listeners(com.CRM.genericLib.MyListener.class)
+//@Listeners(com.CRM.genericLib.MyListener.class)
 public class Create_Contact extends BaseTest {
 	WebdriverCommonLib wcl;
 	Create_Contact_page ccp;

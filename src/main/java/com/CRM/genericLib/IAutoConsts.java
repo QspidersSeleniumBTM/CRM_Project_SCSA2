@@ -7,7 +7,7 @@ public interface IAutoConsts {
 	String GECKO_KEY="webdriver.gecko.driver";
 	String GECKO_VALUE="./drivers/geckodriver.exe";
 	String PROPERTY_PATH="./data/Config.property";
-	String EXCEL_PATH = "./data/CRM.xlsx";
+	String EXCEL_PATH = "./data/CRM.xls";
 	String CAMPAIGN_PROPPATH = "./data/campaign.property";
 	String TASK_PROPPATH = "./data/task.properties";
 	String EVENT_PROPPATH = "./data/event.property";
