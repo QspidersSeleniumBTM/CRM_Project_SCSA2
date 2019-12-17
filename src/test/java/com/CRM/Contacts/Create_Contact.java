@@ -20,7 +20,7 @@ public class Create_Contact extends BaseTest {
 	@Test
 	public void createContact() throws Throwable {
 		
-		bt.openBrowser("chrome", flib.getCellData(EXCEL_PATH, "Contacts", 0, 0));
+		bt.openBrowser("firefox", flib.getCellData(EXCEL_PATH, "Contacts", 0, 0));
 		bt.loginToApp();
 		wcl = new WebdriverCommonLib();
 		ccp=new Create_Contact_page(driver);
