@@ -25,7 +25,7 @@ public class Create_Contact extends BaseTest {
 		wcl = new WebdriverCommonLib();
 		ccp=new Create_Contact_page(driver);
 		cap=new Create_AllContacts(driver);
-		ccp.clickContact();
+//		ccp.clickContact();
 //		String actual1=wcl.getPageTitle();
 //		String expected1=flib.getCellData(EXCEL_PATH, "Contacts", 23, 0);
 //		wcl.verifyAssert(actual1, expected1, "Contacts: All Contacts Page");
