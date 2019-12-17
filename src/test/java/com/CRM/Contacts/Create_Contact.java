@@ -20,12 +20,12 @@ public class Create_Contact extends BaseTest {
 	@Test
 	public void createContact() throws Throwable {
 		
-		bt.openBrowser("firefox", flib.getCellData(EXCEL_PATH, "Contacts", 0, 0));
+		bt.openBrowser("chrome", flib.getCellData(EXCEL_PATH, "Contacts", 0, 0));
 		bt.loginToApp();
 		wcl = new WebdriverCommonLib();
 		ccp=new Create_Contact_page(driver);
 		cap=new Create_AllContacts(driver);
-//		ccp.clickContact();
+		ccp.clickContact();
 //		String actual1=wcl.getPageTitle();
 //		String expected1=flib.getCellData(EXCEL_PATH, "Contacts", 23, 0);
 //		wcl.verifyAssert(actual1, expected1, "Contacts: All Contacts Page");
