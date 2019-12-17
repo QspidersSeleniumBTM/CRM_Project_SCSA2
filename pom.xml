@@ -6,36 +6,29 @@
   
   <build>
   <plugins>
-     
-     <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.15</version>
-            <configuration>
-                <!-- <groups>1</groups> -->
-                <suiteXmlFiles>
-                    <suiteXmlFile>testng.xml</suiteXmlFile>
-                </suiteXmlFiles>
-            </configuration>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-report-plugin</artifactId>
-            <version>2.15</version>
-        </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M4</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    
 
-        <plugin>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.1</version>
-            <configuration>
-                <fork>true</fork>
-                <executable>C:\Program Files\Java\jdk1.8.0_201\bin\javac.exe</executable>
-            </configuration>
-        </plugin>
+
     </plugins>
   
   </build>
-  <dependencies>
+  <dependencies><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.6.1</version>
+</dependency>
+  
    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium
    /selenium-java -->
 <dependency>
@@ -65,19 +58,10 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>6.14.3</version>
-  
+
    
 </dependency>
 
-
-<!-- <dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.6.1</version>
-
-  
-    
-</dependency> -->
 <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 <dependency>
     <groupId>com.aventstack</groupId>
