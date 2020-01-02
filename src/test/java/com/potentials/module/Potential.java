@@ -26,6 +26,7 @@ public class Potential extends BaseTest {
 	@Test(priority=1)
 	public void verifyPotentail() throws Throwable {
 		
+		
 		Thread.sleep(2000);
 		pop=new PoteantialPage(driver);
 		pop.clickOnPoteMod();
